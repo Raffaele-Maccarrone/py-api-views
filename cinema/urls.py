@@ -8,8 +8,6 @@ from .views import (
     GenreDetail,
     GenreList,
     MovieViewSet,
-    movie_list,
-    movie_detail,
 )
 
 

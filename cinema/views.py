@@ -8,13 +8,13 @@ from rest_framework.generics import GenericAPIView
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from cinema.models import (
+from .models import (
     Actor,
     CinemaHall,
     Genre,
     Movie,
 )
-from cinema.serializers import (
+from .serializers import (
     ActorSerializer,
     CinemaHallSerializer,
     GenreSerializer,
