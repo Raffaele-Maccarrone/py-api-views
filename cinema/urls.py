@@ -9,7 +9,7 @@ from .views import (
     GenreList,
     MovieViewSet,
     movie_list,
-    movie_detail
+    movie_detail,
 )
 
 

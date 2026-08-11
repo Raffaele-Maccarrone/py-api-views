@@ -1,5 +1,4 @@
 from rest_framework.decorators import api_view
-from django.shortcuts import get_object_or_404
 from rest_framework import status, mixins, viewsets
 from rest_framework.views import APIView
 from rest_framework.generics import GenericAPIView
@@ -90,7 +89,11 @@ class GenreDetail(APIView):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 
-class ActorList(mixins.ListModelMixin, mixins.CreateModelMixin, GenericAPIView):
+class ActorList(
+    mixins.ListModelMixin,
+    mixins.CreateModelMixin,
+    GenericAPIView
+):
     queryset = Actor.objects.all()
     serializer_class = ActorSerializer
 
